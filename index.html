@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon Ball Lovers</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 0;
+      }
+      .header {
+        text-align: center;
+      }
+      .header h1{
+        font-size: 40px;
+        color: #130f0f;
+        font-weight: 600;
+        padding: 100px 100px 10px 100px;
+      }
+      .header h1:hover{
+        -webkit-text-stroke: 2px #200d53;
+        color: transparent;
+      }
+      .header h4{
+        padding: 10px 120px 100px 120px;
+      }
+      .bgvid{
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+      @media (min-aspect-ratio:16/9)  {
+        .bgvid{
+          width: 100%;
+          height: auto;
+        }
+      }
+      @media (max-aspect-ratio:16/9)  {
+        .bgvid{
+          width: auto;
+          height: 100%;
+        }
+      }
+      .navbar {
+        background-color: chocolate;
+        display: flex;
+        position: sticky;
+      }
+      .navbar a {
+        color: black;
+        padding: 15px 20px;
+      }
+      .navbar a:hover {
+        color: rgb(24, 12, 95);
+        background-color: grey;
+        border: 2px solid black;
+        border-radius: 30px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .side {
+        flex: 30%;
+        background-color: azure;
+        padding: 20px;
+      }
+      .main-content {
+        background-color: antiquewhite;
+        padding: 20px;
+        flex: 70%;
+      }
+      .anime {
+        background-color: rosybrown;
+        position: relative;
+        padding: 10px;
+        margin: auto;
+        border: 2px solid blue;
+        animation: duo 6s ease-in-out 0s infinite;
+      }
+      @keyframes duo {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 0px;
+          left: 150px;
+          background-color: aqua;
+        }
+        50% {
+          top: 50px;
+          left: 150px;
+          background-color: blueviolet;
+        }
+        75% {
+          top: 50px;
+          left: 0px;
+          background-color: tomato;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+        }
+      }
+      .footer ul{
+        list-style-type: none;
+        display: flex;
+        padding: 10px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color:slategray;
+        width: 100%;
+        border:2px solid blue;
+        border-radius:2%;
+        position: relative;
+        margin: auto;
+        top:10px;
+        transition: background-color 2s ease-in-out 0.5s;
+      }
+      .footer ul:hover{
+        background-color: rgb(207, 205, 95);
+      }
+      .akira {
+        background-color: rosybrown;
+        position: fixed;
+        padding: 10px;
+        margin: auto;
+        border: 2px solid rgb(80, 80, 182);
+        animation: akira 10s ease-in-out 0s infinite reverse;
+      }
+      @keyframes akira{
+        0% {
+          top: 0px;
+          left: 0px;
+          border: 1px solid black;
+          border-radius:50%;
+        }
+        25% {
+          top: 0px;
+          left: 50%;
+          background-color: aqua;
+          border: 1px solid black;
+          border-radius:50%;
+        }
+        50% {
+          top: 0px;
+          left: 90%;
+          background-color: blueviolet;
+          border: 1px solid black;
+          border-radius:50%;
+        }
+        65% {
+          top: 80vh;
+          left: 90%;
+          background-color: tomato;
+          border: 1px solid black;
+          border-radius:50%;
+        }
+        80% {
+          top: 80vh;
+          left: 50%;
+          background-color: rgb(91, 55, 124);
+          border: 1px solid black;
+          border-radius:50%;
+        }
+        90% {
+          top: 80vh;
+          left: 0px;
+          background-color: rgb(82, 27, 18);
+          border: 1px solid black;
+          border-radius:50%;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+          background-color: midnightblue;
+          border: 1px solid black;
+          border-radius:50%;
+        }
+      }
+      .last{
+        text-align: center;
+        background-color:wheat ;
+        padding: 5px;
+      }
+      @media (max-width: 700px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: blue; padding: 2px">
+      <h4 style="text-align: center; color: aliceblue">
+        This is a website for Dragon Ball Lovers who wants to explore any myths
+        about or Related to Dragon Ball
+      </h4>
+    </div>
+    <div class="header">
+      <video autoplay loop muted plays-inline class="bgvid">
+        <source src="./assests/( MMV ) MUI Goku and Ultra Ego Vegeta VS Gas ( DBS Mangá Animation )(720P_60FPS).mp4" type="video/mp4">
+      </video>
+      <h1>Welcome to Dragon Ball Universe</h1>
+      <h4>
+        We welcome the <strong><u>Saiyans</u></strong>
+      </h4>
+    </div>
+    <span class="akira">Rest In Power <br> Toryama</span>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="Join.html">JoinTheCommunity</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="row">
+      <div class="side">
+        <h4>About DragonBall</h4>
+        <h5>The DragonBall Z logo:</h5>
+        <img
+          src="./assests/dbzlogo.png"
+          alt="dbzlogo"
+          class="logo"
+          width="100%"
+          height="200px"
+        />
+        <p>
+          Dragon Ball Z is adapted from the final 324 chapters of the manga
+          series which were published in Weekly Shōnen Jump from 1988 to 1995.
+          It premiered in Japan on Fuji Television on April 26, 1989, taking
+          over its predecessor's time slot, and ran for 291 episodes until its
+          conclusion on January 31, 1996.
+        </p>
+        <h2>Main Characters Who made it so popular</h2>
+        <p style="font-size: 1em">
+          Vegeta and Goku, or Kakkarot his birth name, are both Saiyans from
+          planet Vegeta which was destroyed by Frieza along with the majority of
+          the Saiyan Race. Vegeta, the son of King Vegeta and the Prince of All
+          Saiyans, was born on planet Vegeta and was an Elite Class Warrior as a
+          child.While Goku who brought up in earth.
+        </p>
+        <img
+          src="./assests/anim.jpg"
+          alt="goku and vegeta"
+          class="anime"
+          style="height: 100px"
+        />
+      </div>
+      <div class="main-content">
+        <h1>Welcome to English DragonBall Verse</h1>
+        <h3>Join If you are not afraid to train hard</h3>
+        <img
+          src="./assests/z warriors.png"
+          alt="zfighters"
+          style="height: 500px; width: 100%"
+        />
+        <p>
+          The Z-Fighters (Ｚ戦士, Zetto Senshi; also known as the Z-Warriors,
+          Earth's Special Forces or, as Mr. Satan calls them, the Gold Fighters)
+          are a small group of warriors located on Earth. Their duty is to
+          defend Earth from major threats and to protect the seven mystical
+          Dragon Balls from the hands of evil.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>List of Characters in Dragon Ball Universe</h2>
+      <ul>
+        <li style="border: 2px solid black;">
+          Goku <br>
+          <img
+            src="./assests/goku.png"
+            width="150px"
+            height="150px"
+          />
+        </li>
+        <li style="border: 2px solid black;">
+          Vegeta <br>
+          <img
+            src="./assests/vegeta.jpg"
+            width="150px"
+            height="150px"
+          />
+        </li style="border: 2px solid black;">
+        <li style="border: 2px solid black;">
+          Gohan <br>
+          <img
+            src="./assests/gohan.jpg"
+            width="150px"
+            height="150px"
+          />
+        </li style="border: 2px solid black;">
+        <li style="border: 2px solid black;">
+          Broly <br>
+          <img
+            src="./assests/broly.jpg"
+            width="150px"
+            height="150px"
+          />
+        </li>
+        <li style="border: 2px solid black;">
+          Trunks <br>
+          <img
+            src="./assests/trunks.jpg"
+            width="150px"
+            height="150px"
+          />
+        </li>
+        <li style="border: 2px solid black;">
+          Goten <br>
+          <img
+            src="./assests/goten.jpg"
+            width="150px"
+            height="150px"
+          />
+        </li>
+        <span><a href="#">See more</a></span>
+      </ul>
+    </div>
+    <div class="last"><h2>DRAGON BALL FOREVER</h2></div>
+  </body>
+</html>

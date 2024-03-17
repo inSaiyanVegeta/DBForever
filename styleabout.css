@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(226, 207, 182);
+    font-size: large;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: chocolate;
+    display: flex;
+    position: sticky;
+  }
+  .navbar a {
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .navbar a:hover {
+    color: rgb(24, 12, 95);
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 30px;
+  }
+  .header{
+    background-color: aquamarine;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .content{
+    background-color: wheat;
+    border: 2px solid purple;
+    border-radius: 10px;
+  }
+  #img{
+    border: 2px solid violet;
+    border-radius: 20px;
+  }
+ #img2{
+    float: left;
+    border: 2px solid rgb(30, 32, 165);
+    border-radius: 5px;
+ }
+ p{
+    border: 0.5px dotted black;
+    padding: 10px;
+ }
